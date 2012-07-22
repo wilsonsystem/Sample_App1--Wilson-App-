@@ -9,8 +9,6 @@ gem 'mysql2'
 
 group :development, :test do
     gem 'rspec-rails', '2.10.0'
-    gem 'capybara', '1.1.2'
-
 end
 
 # Gems used only for assets and not required
@@ -26,6 +24,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
 
 group :production do
   gem 'pg', '0.12.2'
