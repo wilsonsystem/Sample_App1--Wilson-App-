@@ -8,9 +8,8 @@ subject { page }
 
     before {visit root_path}
 
-    it { should have_selector('h1', :text => 'Sample App')}
-    it { should have_selector('title',
-                        :text => "Ruby on Rails Tutorial Sample App | Home")}
+    it { should have_selector('h1', :text => 'Wilson App')}
+    it { should have_selector('title',:text => full_title('Home'))}
  
   end
 
